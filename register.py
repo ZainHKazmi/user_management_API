@@ -1,12 +1,10 @@
-class register:
-    
+class Register:
     def __init__(self, username, password):
         self.username = username
         self.password = password
         self.password_min_len = 7
 
     def password_verification(self):
-        ##TODO: implement password_verification
         lowercase_alphabets = 'abcdefghijklmnopqrstuvwxyz'
         uppercase_alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         numbers = '1234567891'
@@ -39,9 +37,11 @@ class register:
         ##TODO: Implement username check
         pass
 
-    def register_user(self):
-        ##TODO: Implement username check
-        pass
+    def register_user(self, memory_file):
+        mem_file = open(memory_file, "a")
+        user_info = "{" + self.username + ":" + self.password + "}"
+        mem_file.write(user_info)
 
-    if __name__ == "__main__":
-        pass
+if __name__ == "__main__":
+    a = Register("a","abc")
+    a.register_user("users.txt")
