@@ -1,7 +1,7 @@
 Class User:
-    def __init__(self):
+    def __init__(self,is_admin):
         self.is_logged_in = False
-        self.is_admin = False
+        self.is_admin = is_admin
 
     def make_user_admin(self, other):
         if self_admin == true:
@@ -33,3 +33,12 @@ Class User:
         else:
             print("admin privelages required")
 
+    def get_role(self):
+            print(str(self.is_admin))
+
+if __name__ == "__main__":
+    user1 = user(True)
+    user2 = user(False)
+    user1.make_user_admin(user2)
+    user1.get_role()
+    user2.get_role()
