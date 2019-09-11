@@ -4,6 +4,7 @@ class register:
         self.username = username
         self.password = password
         self.password_min_len = 7
+
     def password_verification(self):
         ##TODO: implement password_verification
         lowercase_alphabets = 'abcdefghijklmnopqrstuvwxyz'
