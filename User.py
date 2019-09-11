@@ -37,8 +37,8 @@ class User:
             print(str(self.is_admin))
 
 if __name__ == "__main__":
-    user1 = user(True)
-    user2 = user(False)
+    user1 = User(True)
+    user2 = User(False)
     user1.make_user_admin(user2)
     user1.get_role()
     user2.get_role()
