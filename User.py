@@ -4,7 +4,7 @@ class User:
         self.is_admin = is_admin
 
     def make_user_admin(self, other):
-        if self_admin == true:
+        if self.is_admin == True:
             other.admin = True
         else:
             print("admin privelages required")
