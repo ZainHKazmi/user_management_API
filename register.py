@@ -12,5 +12,9 @@ class register:
         ##TODO: Implement username check
         pass
 
+    def register_user(self):
+        ##TODO: Implement username check
+        pass
+
     if __name__ == "__main__":
         pass
